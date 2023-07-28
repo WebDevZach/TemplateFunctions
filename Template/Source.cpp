@@ -13,13 +13,9 @@ using namespace std;
 #include <iostream>
 
 template <class T>
-void swapVars(T& a, T& b)
+T half(T& a)
 {
-	T temp; 
-
-	temp = a;
-	a = b;
-	b = temp;
+	return a / 2; 
 }
 
 
@@ -31,14 +27,9 @@ int main()
 	float b = 5.0f;
 	int c = 3;
 
-	half(a);
-	half(b);
-	half(c);
-
-	cout << a << endl;
-	cout << b << endl;
-
-
+	cout << half(a) << endl;
+	cout << half(b) << endl;
+	cout << half(c) << endl;
 
 	return 0;
 }
